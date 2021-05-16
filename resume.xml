@@ -1,0 +1,139 @@
+<?xml version ="1.0"?>
+<!-- resume.xml -->
+<!-- Abuni Gaiya's Resume -->
+<?xml-stylesheet type="text/xsl" href="resume.xsl"?>
+<resume>
+	<info>
+		<name>Abuni Amanda Gaiya</name>
+		<address>
+			<street>11015 89 Ave NW</street>
+			<prov>Alberta</prov> 
+			<country>Canada</country> 
+			<postalcode>T6G0Z7</postalcode> 
+		</address>
+		<email>gaiya@ualberta.ca</email>
+		<github>https://github.com/Abunie</github>
+		<portfolio>https://all-you-need-to-know-about-abuni-amanda-gaiya.webnode.com</portfolio>
+	</info>
+	<education>
+		<degree graduation="2021">
+			<program>Computer Engineering (Nano)</program>
+			<university>University of Alberta</university>	
+		</degree>
+	</education>
+	<computerandprogrammingskills>
+		<operatingsystems>
+			<skill>Linux,</skill>
+			<skill>Windows,</skill>
+			<skill>MacOS,</skill>
+			<skill>iOS,</skill>
+			<skill>Android</skill>
+		</operatingsystems>
+		<programminglang>
+			<skill>C++,</skill>
+			<skill>C#,</skill>
+			<skill>Python,</skill>
+			<skill>Assembly,</skill>
+			<skill>Java,</skill>
+			<skill>SQL,</skill>
+			<skill>VHDL,</skill>
+            <skill>Assembly,</skill>
+            <skill>Elixir</skill>
+		</programminglang>
+		<webdesign>
+			<skill>HTML,</skill>
+			<skill>CSS,</skill>
+			<skill>JavaScript,</skill>
+			<skill>XML,</skill>
+			<skill>AJAX,</skill>
+			<skill>PHP,</skill>
+			<skill>MYSQL,</skill>
+			<skill>WordPress</skill>
+		</webdesign>
+		<tools>
+			<skill>Flutter,</skill>
+			<skill>Andriod Studio,</skill>
+			<skill>Jupyter Notebooks,</skill>
+			<skill>XXAMP,</skill>
+			<skill>MATLAB,</skill>
+			<skill>Git,</skill>
+            <skill>Electron</skill>
+		</tools>
+	</computerandprogrammingskills>
+	<workexperience>
+        <experience>
+			<position at="Alberta Health Services">Windows Application Developer</position>
+			<start>2020-09</start>
+			<end>2020-12</end>
+			<description>
+			<task>Upgraded a console-based application to a Window interface application that control and acquires data from a smart pressure cushion acquisition system using C#, ASP.NET, JavaScript, HTML and CSS </task>
+			<task>Created properly detailed user manual and documentations to accompany the system </task>
+            <task>Composed a technical report on the causes of pressure ulcer and how our cushion could prevent pressure ulcer</task>
+			</description>
+		</experience>
+        <experience>
+			<position at="University of Lethbridge">Software Developer</position>
+			<start>2020-05</start>
+			<end>2020-08</end>
+			<description>
+			<task>Designed a scalable web application for a rodent monitoring system using, JavaScript, HTML, CSS, Bootstrap and Flask and integrated it with a python and SQL backend</task>
+			<task>Collaborated in a team of four using agile software development practices to build a rodent monitoring system</task>
+            <task>Refactored legacy codebase to achieve a simple and understandable code base for other developers</task>
+			</description>
+		</experience>
+		<experience>
+			<position at="Edmonton Natural Hair Show and Others">Freelance Web developer</position>
+			<start>2019-01</start>
+			<end>2020-12</end>
+			<description>
+			<task>Built websites using tools and languages like WordPress, HTML, CSS, JavaScript, MYSQL, and PostgreSQL </task>
+			<task>Ensure website responsivity on different devices, good UI/UX and effective SEO for all client websites </task>
+            <task>Effectively communicated with clients to ensure all project requirements had been met </task>
+			</description>
+		</experience>
+		<experience>
+			<position at="University of Alberta">IT Specialist Technician</position>
+			<start>2019-01</start>
+			<end>2019-04</end>
+			<description>
+			<task>Installed different operating systems on desktops and laptops for new graduate students </task>
+			<task>Provided technical and connectivity support to professors and graduate students</task>
+			<task>Managed databases of over 10,000 records for Engineering faculty as needed </task>
+			</description>
+		</experience>
+		<experience>
+			<position at="University of Alberta">Callysto Devloper</position>
+			<start>2018-06</start>
+			<end>2018-08</end>
+			<description>
+			<task>Built Interactive notebooks aimed at teaching Data Science and Machine learning to High School students. </task>
+			<task>Supervising high school interns on placement with the Professor Eleni </task>
+			</description>
+		</experience>	
+	</workexperience>
+	<projects>
+		<project>
+		<projname purpose="Personal" year="2020">MyHairRegimen IOS/Android App </projname>
+		<projdescription>Built a mobile andriod/ios mobile application with features like quizzes, and schedule builders that recommends and helps users plan their hair routines (myhairregimen.com) </projdescription>
+		</project>
+		<project>
+		<projname purpose="COMPUT 301" year="2019">MoodBook Android  App</projname>
+		<projdescription>Collaborated in a team of 6 to develop a social application that allows users share their mood using agile programming practices</projdescription>
+		</project>
+		<project>
+		<projname purpose="Personal" year="2018">ESL Website</projname>
+		<projdescription>Worked in a team of three to build a social web app that helps students learning English to connect with other students learning English and English natives</projdescription>
+		</project>
+	</projects>
+	<extracurricular>
+	    <club>
+			<clubname>DiscoverE</clubname>
+			<contribution>Aided camp instructors in delivering the teaching content in the Web design, Gaming Creatives and Stop Motion Camps.</contribution>
+		</club>
+		<club>
+			<clubname>Ada's Team</clubname>
+			<contribution>Represented the Club at the 2019 Can-Cwic conference and Volunteered at team events such as University clubs fair and YEGTech Open House.</contribution>
+		</club>
+	</extracurricular>
+	<refrences> Refreences available on Request</refrences>
+</resume>

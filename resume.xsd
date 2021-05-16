@@ -1,0 +1,148 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="resume">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="info">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="street"/>
+                    <xs:element type="xs:string" name="prov"/>
+                    <xs:element type="xs:string" name="country"/>
+										<xs:element type="xs:string" name="postalcode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+			  <xs:element type="xs:string" name="email"/>
+			  <xs:element type="xs:anyURI" name="github"/>
+              <xs:element type="xs:anyURI" name="portfolio"/>			  
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="education" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="degree">
+                <xs:complexType>
+                  <xs:sequence>
+					<xs:element type="xs:string" name="program"/>
+                    <xs:element type="xs:string" name="university"/>    
+                  </xs:sequence>
+				  <xs:attribute name="graduation" type="xs:gYear"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+		<xs:element name="computerandprogrammingskills">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="operatingsystems">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="programminglang">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="webdesign">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="tools">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="workexperience">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="experience" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="position" >
+									<xs:complexType>
+										<xs:simpleContent>
+											<xs:extension base="xs:string">
+												<xs:attribute name="at" type="xs:string" use="required"/>
+											</xs:extension>
+										</xs:simpleContent>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="start" type="xs:gYearMonth"/>
+								<xs:element name="end" type="xs:string"/>
+								<xs:element name="description">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="task" type="xs:string" maxOccurs="unbounded"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>	
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="projects" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="project" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="projname">
+									<xs:complexType>
+										<xs:simpleContent>
+											<xs:extension base="xs:string">
+												<xs:attribute name="purpose" type="xs:string"/>
+												<xs:attribute name="year" type="xs:gYear"/>
+											</xs:extension>
+										</xs:simpleContent>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="projdescription" type="xs:string"/>	
+							</xs:sequence>	
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+        <xs:element name="extracurricular" minOccurs="0">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="club" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="clubname" type="xs:string"/>
+								<xs:element name="contribution" type="xs:string" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="refrences" type="xs:string" default="Refrences Available Upon Request"/>
+		
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
